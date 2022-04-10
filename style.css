@@ -1,5 +1,9 @@
 
-
+/* Colors
+    Dark grey - #5c5c5c
+    Light grey - #d9d9d9
+    White
+*/
 
 *{
 	padding:0;
@@ -104,7 +108,7 @@ ul a {
     margin-top: 25px;
 }
 .nav li{
-    border-right: 2px solid #231D2F;
+    border-right: 2px solid black;
     display: inline-block;
     padding: 0 15px;
 }
@@ -120,12 +124,11 @@ ul a {
 	font-weight:300;
 }
 
-.light {color:#F7F5F3;}
-.dark {color:#231D2F;}
-.black-text {color:black;}
+.light {color:white;}
+.dark {color:black;}
 
 .highlight-light {
-    background: linear-gradient(120deg, #F7F5F3 0%, #F7F5F3 100%);
+    background: linear-gradient(120deg, #d9d9d9 0%, #d9d9d9 100%);
     background-repeat: no-repeat;
     background-size: 100% 90%;
     background-position: 0 60%;
@@ -133,7 +136,7 @@ ul a {
 }
 
 .highlight-dark {
-    background: linear-gradient(120deg, #F7F5F3 0%, #F7F5F3 100%);
+    background: linear-gradient(120deg, #5c5c5c 0%, #5c5c5c 100%);
     background-repeat: no-repeat;
     background-size: 95% 85%;
     background-position: 60% 60%;
@@ -218,11 +221,11 @@ nav a {
 }
 
 .bg-mid {
-    background-color: grey;
+    background-color: #d9d9d9;
 }
 
 .bg-dark {
-    background-color: black;
+    background-color: #5c5c5c;
 }
 
 .bg-img {
@@ -241,7 +244,7 @@ nav a {
 
 .button-inverted {
 	text-decoration: none;
-	color: #231D2F;
+	color: #5c5c5c;
 	border: 2px solid;
 	border-radius:25px;
 	padding: 0.6rem 2rem;
@@ -253,7 +256,7 @@ nav a {
   }
 
   .button:hover {
-	color: #231D2F;
+	color: #d9d9d9;
   }
 
   .button.inverted {   /* this is for a button on a dark background */
@@ -262,8 +265,8 @@ nav a {
   }
 
   .button-inverted:hover {
-	color: #be748f;
-	border-color: #be748f;
+	color: #5c5c5c;
+	border-color: #5c5c5c;
   }
 
   a:hover {
@@ -298,7 +301,7 @@ nav a {
   .mobile-menu {
 	display: none; 
 	text-decoration:none;
-	background-color: #F7F5F3; 
+	background-color: #d9d9d9; 
 	padding: 5%;
 	position: relative; 
 	top:0;
