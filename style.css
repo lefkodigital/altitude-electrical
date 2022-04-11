@@ -33,7 +33,7 @@ html {
 /* Typography Utility Classes */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Epilogue', sans-serif;
 	word-spacing: 0.1em;
 	letter-spacing:0.1rem;
 	margin-bottom:1.2rem;
@@ -52,13 +52,13 @@ h5 {
 }
 
 h6 {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family:'Epilogue', sans-serif; 
 	word-spacing: 0.2rem;
 	letter-spacing:0.1rem;
 }
 
 p, a, li {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Epilogue', sans-serif; 
 	word-spacing:0.1rem;
 	letter-spacing:0.05rem;
 	margin-bottom: 0.8rem;
@@ -88,6 +88,8 @@ p:last-child {margin-bottom: 0;}
 .italic {font-style:italic;}
 .bold {font-weight:700;}
 .semi-bold {font-weight:600;}
+.thin {font-weight:300;}
+.x-thin {font-weight:100;}
 
 .uppercase {text-transform:uppercase;}
 .lowercase {text-transform:lowercase;}
@@ -155,7 +157,7 @@ a {
 nav a {
 	text-decoration:none;
 	border:none;
-	margin:5%;
+	margin:2%;
 }
 
 /* Padding Utility Classes */ 
@@ -228,7 +230,7 @@ nav a {
 }
 
 .bg-dark {
-    background-color: #5c5c5c;
+    background-color: #3d3d3d;
 }
 
 .bg-img {
@@ -247,8 +249,9 @@ nav a {
 
 .button-inverted {
 	text-decoration: none;
-	color: #5c5c5c;
-	border: 2px solid;
+	color: white;
+	border: 2px solid #d9d9d9;
+	fill:#d9d9d9;
 	border-radius:25px;
 	padding: 0.6rem 2rem;
 	margin-top: 1rem;
@@ -260,11 +263,6 @@ nav a {
 
   .button:hover {
 	color: #d9d9d9;
-  }
-
-  .button.inverted {   /* this is for a button on a dark background */
-	border: 2px solid white;
-	color: white;
   }
 
   .button-inverted:hover {
@@ -390,3 +388,62 @@ form button:hover {
 	color: #ddb7c5;
 	border-color: #ddb7c5;
 }
+
+
+
+/*---------------- Media Queries ------------------------*/
+
+	/* General CSS Styles (apply everywhere) */ 
+ 
+	.show-sm,
+	.show-md {
+		display: none;
+	}
+
+	/* --------------- MD Media Query (64em / 1024px) --------------- */ 
+	/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+	@media (max-width: 64em) {
+		.show-md { display: inline-flex; }
+		.hide-md { display: none; }
+
+		.md-m-text {font-size:2.5rem;}
+		.md-s-text {font-size:1.5rem;}
+	}
+
+	/* --------------- SM Media Query (48em / 768px) --------------- */ 
+	/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+	@media (max-width: 48em) {
+		.show-sm { display: flex; }
+		.hide-sm { display: none; }
+
+		.sm-text-center {text-align:center;}
+		.sm-text-left {text-align:left;}
+		.sm-text-right {text-align:right;}
+
+		.sm-padded {padding:5%}
+		.sm-padded-1 {padding:1rem;}
+		.sm-padded-05 {padding:0.5rem;}
+
+		.sm-padded-t-0 {padding-top:0;}
+		.sm-padded-b-0 {padding-bottom:0;}
+		.sm-margin-t-0 {margin-top:0;}
+		.sm-margin-b-0 {margin-bottom:0;}
+		.sm-padded-r-0 {padding-right:0;}
+
+		.sm-s-text {font-size:1rem;}
+		.sm-m-text {font-size:2rem;}
+
+		form input {
+			width:98%;
+		}
+
+		.footer-nav {
+			font-size:1rem;
+			word-spacing:0.5rem;
+			padding-bottom:1rem;
+		}
+
+		* {font-size:0.8rem;}
+	}
