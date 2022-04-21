@@ -35,8 +35,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Epilogue', sans-serif;
 	word-spacing: 0.1em;
-	letter-spacing:0.1rem;
 	margin-bottom:1.2rem;
+	font-weight:400;
+	color:black;
 }
 
 h4 {
@@ -132,20 +133,20 @@ ul a {
 .light {color:white;}
 .dark {color:black;}
 
-.highlight-light {
-    background: linear-gradient(120deg, #d9d9d9 0%, #d9d9d9 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 90%;
-    background-position: 0 60%;
-    opacity:50%;
+.highlight-light-1 {
+    background: linear-gradient(120deg, rgba(217,217,217,.8) 0%, rgba(217,217,217,.8) 100%);
+	background-repeat:no-repeat;
+    background-size: 34% 100%;
+    background-position: 50%;
+	padding: 0.5rem 0;
 }
 
-.highlight-dark {
-    background: linear-gradient(120deg, #5c5c5c 0%, #5c5c5c 100%);
+.highlight-light-2 {
+    background: linear-gradient(120deg, rgba(217,217,217,.8) 0%, rgba(217,217,217,.8) 100%);
     background-repeat: no-repeat;
-    background-size: 95% 85%;
-    background-position: 60% 60%;
-    opacity:50%;
+    background-size: 100% 90%;
+    background-position: 50% 50%;
+	padding: 0.5rem 0;
 }
 
 a {
@@ -242,7 +243,17 @@ nav a {
 
 /* Image Classes */
 
+.bg-img-header {
+	background-image: url(/images/header-img.jpg);
+    background-size:cover;
+    background-position:center;
+}
 
+.logo {
+	background-image: url(/images/Logo\ -\ Large.jpg);
+	background-size:cover;
+	background-position:center;
+}
 
 
 /* Button Classes */
@@ -280,7 +291,7 @@ nav a {
 .hamburger-button {
 	cursor: pointer;
 	padding: 0.5rem;
-	padding-left:50%;
+	padding-left:75%;
 	display: inline-block;
 	font-weight: 200;
 	font-size: 2.5rem;
