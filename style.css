@@ -136,7 +136,7 @@ ul a {
 .highlight-light {
     background: linear-gradient(120deg, rgba(217,217,217,.8) 0%, rgba(217,217,217,.8) 100%);
 	background-repeat:no-repeat;
-	display:inline;
+	display:inline-block;
 	padding: 0.5rem 0;
 }
 
@@ -150,6 +150,16 @@ nav a {
 	text-decoration:none;
 	border:none;
 	margin:2%;
+}
+
+.banner {
+	display:flex;
+	flex-direction:column;
+  	justify-content:center;
+  	align-items:center;
+	background-image: url(/images/header-img.jpg);
+    background-size:cover;
+    background-position:center;
 }
 
 /* Padding Utility Classes */ 
@@ -234,17 +244,29 @@ nav a {
 
 /* Image Classes */
 
-.bg-img-header {
-	background-image: url(/images/header-img.jpg);
-    background-size:cover;
-    background-position:center;
-}
-
 .logo {
 	background-image: url(/images/Logo\ -\ Large.jpg);
 	background-size:cover;
 	background-position:center;
 }
+
+.card-img-res {
+	display:flex;
+	justify-content:center;
+  	align-items:center;
+	background-image: url(/images/header-img.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+.card {
+	padding-top:1.5rem;
+	color:white;
+  }
+  
+  .card h3 {
+	font-size:1.8rem;
+  }
 
 
 /* Button Classes */
@@ -413,6 +435,8 @@ form button:hover {
 		.md-s-text {font-size:1.5rem;}
 	}
 
+	
+
 	/* --------------- SM Media Query (48em / 768px) --------------- */ 
 	/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
@@ -449,3 +473,22 @@ form button:hover {
 
 		* {font-size:0.8rem;}
 	}
+
+/* --------------- XS Media Query (36em / 768px) --------------- */ 
+	/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+	@media(max-width:36em) {
+		.horizontal-scroll {
+		  overflow-x:auto;
+		  flex-wrap:nowrap;
+		  padding-left:1rem;
+		  padding-right:1rem;
+		  padding-bottom:7%;
+		}
+		  .card img {
+			margin-top:-25%;
+		  }
+		  .mob-padded-0 {
+			padding-left:0;
+			padding-right:0;
+		  }
+		}
