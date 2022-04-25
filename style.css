@@ -137,7 +137,14 @@ ul a {
     background: linear-gradient(120deg, rgba(217,217,217,.8) 0%, rgba(217,217,217,.8) 100%);
 	background-repeat:no-repeat;
 	display:inline-block;
-	padding: 0.5rem 0;
+	padding: 0.4rem 0.4rem;
+}
+
+.highlight-dark {
+    background: linear-gradient(120deg, rgba(92,92,92,.8) 0%, rgba(92,92,92,.8) 100%);
+	background-repeat:no-repeat;
+	display:inline-block;
+	padding: 0.4rem 0.4rem;
 }
 
 a {
@@ -160,6 +167,11 @@ nav a {
 	background-image: url(/images/header-img.jpg);
     background-size:cover;
     background-position:center;
+}
+
+.subtitle {
+    font-size:1.2rem;
+    color: #d9d9d9;
 }
 
 /* Padding Utility Classes */ 
@@ -257,6 +269,17 @@ nav a {
 	background-image: url(/images/header-img.jpg);
     background-size:cover;
     background-position:center;
+	min-height:20vh;
+}
+
+.card-img-comm {
+	display:flex;
+	justify-content:center;
+  	align-items:center;
+	background-image: url(/images/header-img.jpg);
+    background-size:cover;
+    background-position:center;
+	min-height:20vh;
 }
 
 .card {
@@ -265,17 +288,28 @@ nav a {
   }
   
   .card h3 {
-	font-size:1.8rem;
+	font-size:2.5rem;
   }
 
+
+  .quote-icon {
+    font-size:6rem;
+    display:inline-block;
+    color:#d9d9d9;
+    line-height:1;
+}
+
+.square {
+	padding-bottom: 100%;
+  }
 
 /* Button Classes */
 
 .button-inverted {
 	text-decoration: none;
 	color: white;
-	border: 2px solid #d9d9d9;
-	fill:#d9d9d9;
+	border: 2px solid #3d3d3d;
+	fill:#3d3d3d;
 	border-radius:25px;
 	padding: 0.6rem 2rem;
 	margin-top: 1rem;
@@ -290,8 +324,9 @@ nav a {
   }
 
   .button-inverted:hover {
-	color: #5c5c5c;
-	border-color: #5c5c5c;
+	color: black;
+	border-color: #d9d9d9;
+	fill:#3d3d3d
   }
 
   a:hover {
