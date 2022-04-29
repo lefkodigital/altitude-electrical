@@ -304,12 +304,10 @@ nav a {
 	padding-bottom: 100%;
   }
 
-.footer-logo {
-	background-image: url(/images/logo-large.jpg);
-	max-height: 100%;
-	max-width:100%;
-	background-size:cover;
-	background-repeat:no-repeat;
+  footer nav a {
+	display:block;
+	padding: 0.25rem;
+	font-size: 0.9rem;
   }
 
 /* Button Classes */
