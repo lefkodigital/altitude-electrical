@@ -41,8 +41,8 @@
     <body>
 
         <!-- Header -->
-        <header class="grid bg-dark padding-05">
-            <a class="col-6-middle">
+        <header class="grid-spaceBetween bg-dark padding-05">
+            <a href="/index.html" class="col-6-bottom_sm-9">
                 <img src="/images/Logo-cropped.jpg" class="header-logo">
             </a>
             <div class="col-6-middle right light uppercase hide-md">
@@ -53,14 +53,14 @@
                     <a href="/contact.html" class="button-inverted">Get in Touch</a>
                 </nav>
             </div>
-            <div class="col-9-middle right show-md">
+            <div class="col-3-middle right show-md">
                 <a class="hamburger-button right"> &#9776; </a>
             </div>
         </header>
 
         <!-- Image Banner with White Highlight  -->
 
-        <section class="banner padding center tall-60">
+        <section class="banner padding center tall-60 sm-tall-30">
             <div class="uppercase padding">
                 <h1 class="highlight-light">Altitude Electrical</h1>
             </div>
@@ -70,22 +70,22 @@
         </section>
 
         <!-- Text Highlight -->
-        <section class="grid center padding-md bg-mid">
-            <h4 class="col-12-middle uppercase font-sm">A bit about us</h4>
-            <p class="col-12-middle padding-lr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio neque quibusdam provident reprehenderit tenetur, corporis autem quaerat. Blanditiis odit consectetur saepe autem facere facilis commodi obcaecati corrupti ducimus. Temporibus, natus.</p>
+        <section class="grid center padding-md sm-padding-1 bg-mid">
+            <h4 class="col-12-middle uppercase font-sm hide-sm">A bit about us</h4>
+            <p class="col-12-middle padding-lr sm-s-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio neque quibusdam provident reprehenderit tenetur, corporis autem quaerat. Blanditiis odit consectetur saepe autem facere facilis commodi obcaecati corrupti ducimus. Temporibus, natus.</p>
         </section>
 
         <!-- Services Blocks -->
 
         <section class="center padding-md">
-            <h3 class="uppercase font-ml margin-b">Our Services</h3>
+            <h3 class="uppercase font-ml margin-b sm-l-text">Our Services</h3>
             <div class="grid horizontal-scroll">
             <!--   Card 1   -->
-                <div class="col-6_xs-11 padded-sm">
+                <div class="col-6_sm-11 padded-sm">
                   <div class="card bg-mid">
                     <div>
                       <div class="bg-res card-img-res margin-lr">
-                        <h3 class="uppercase highlight-dark light">Residential</h3>
+                        <h3 class="uppercase highlight-dark light sm-l-text">Residential</h3>
                       </div>
                     </div>
                     <div class="margin-lr padding-sm padding-tb dark">
@@ -95,11 +95,11 @@
                   </div>
               </div>
           <!--   Card 2   -->
-              <div class="col-6_xs-11 padded-sm">
+              <div class="col-6_sm-11 padded-sm">
                   <div class="card bg-mid">
                     <div>
                       <div class="bg-res card-img-comm margin-lr">
-                        <h3 class="uppercase highlight-dark light">Commercial</h3>
+                        <h3 class="uppercase highlight-dark light sm-l-text">Commercial</h3>
                       </div>
                     </div>
                     <div class="margin-lr padding-sm padding-tb dark">
@@ -113,16 +113,16 @@
 
         <!-------------- Testimonial ----------------->
 
-        <section class="grid padding-md bg-dark">
+        <section class="grid padding-md sm-padding-10 bg-dark">
             <div class="col-1-top right">
-                <span class="quote-icon">"</span>
+                <span class="quote-icon"><i class="fa-solid fa-quote-left"></i></span>
             </div>
-            <div class="col-10 center">
-                <p class="light font-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur eligendi at mollitia qui molestias fuga dolorem suscipit corporis minus!</p>
-                <p class="subtitle">- A happy customer</p>
+            <div class="col-10 center sm-padding-1">
+                <p class="light font-sm sm-m-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur eligendi at mollitia qui molestias fuga dolorem suscipit corporis minus!</p>
+                <p class="subtitle sm-s-text">- A happy customer</p>
             </div>
             <div class="col-1-bottom">
-                <span class="quote-icon">"</span>
+                <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
             </div>
         </section>
 
@@ -130,13 +130,13 @@
         <!-- About block (text left, image right) -->
 
         <section class="grid padding-md">
-            <div class="col-7-middle">
+            <div class="col-7-middle_sm-12 sm-text-center">
                 <h4>A bit more about us</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque consequatur maiores nemo adipisci numquam saepe! Enim explicabo, voluptates distinctio provident, harum voluptatem est maxime ab iure quisquam fugiat consectetur?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sapiente, harum similique earum sequi quia omnis, corporis eveniet possimus facilis perspiciatis enim delectus cumque deleniti magni velit iusto ipsam eius?</p>
                 <a href="/contact.html" class="button-inverted-white">Get in touch</a>
             </div>
-            <div class="col-5-middle">
+            <div class="col-5-middle_sm-12">
                 <div class="bg-img">
                     <!-- Need to sort image here -->
                 </div>
@@ -145,32 +145,39 @@
 
         <!-- Footer -->
 
-        <footer class="grid-bottom padding-sm">
+        <footer class="grid-bottom-spaceBetween padding-sm sm-text-center bg-dark light">
+            
             <!-- column -->
-            <div class="col-3_sm-4_xs-12 padded-1">
-                <h4 class="uppercase"> Our Services </h4>
-                <nav>
-                    <a href="#"> Residential </a>
-                    <a href="#"> Commercial </a>
-                    <a href="#"> All Services </a>
-                </nav>
-            </div>
-            <!-- column -->
-            <div class="col-3_sm-4_xs-12 padded-1">
-                <h4 class="uppercase"> Explore </h4>
+            <div class="col-1.5_sm-3_xs-6 padded-1">
+                <h4 class="uppercase light"> Explore </h4>
                 <nav>
                     <a href="#"> Home </a>
                     <a href="#"> Blog </a>
                     <a href="#"> Contact </a>
                 </nav>
             </div>
+            
+            <!-- column -->
+            <div class="col-1.5_sm-3_xs-6 padded-1">
+                <h4 class="uppercase light">Services</h4>
+                <nav>
+                    <a href="#"> Residential </a>
+                    <a href="#"> Commercial </a>
+                    <a href="#"> All Services </a>
+                </nav>
+            </div>
+
+            <!-- Logo column -->
+            <div class="col-3 hide-sm padded-1 center">
+                <img src="/images/Logo-cropped.jpg" class="footer-logo">
+            </div>
 
             <!-- column -->
-            <div class="col-6_sm-4_xs-12 padded-1">
+            <div class="col-3_sm-4_xs-12 right padded-1 sm-text-center">
                 <nav>
-                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:pete@altitude-electrical.co.nz" target="_blank">pete@altitude-electrical.co.nz</a></p>
-                    <p><strong>Email:</strong> <a href="#">hello@thesleep.co</a></p>
-                    <p><strong>Instagram:</strong><a href="#"> @thesleepco</a></p>
+                    <p><a href="mailto:pete@altitude-electrical.co.nz" target="_blank"><i class="fa-solid fa-envelope margin-r-1"></i>pete@altitude-electrical.co.nz</a></p>
+                    <p><a href="tel:XXXXXXXX"><i class="fa-solid fa-phone margin-r-1"></i>09-XXX-XXXX</a></p>
+                    <p><a href="#"><i class="fa-brands fa-facebook-f margin-r-1"></i>Find us on Facebook</a></p>
                 </nav>
             </div>
         </footer>

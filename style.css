@@ -269,7 +269,7 @@ nav a {
     background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	min-height:100vh;
+	min-height:50vh;
 }
 
 /* Image Classes */
@@ -326,6 +326,12 @@ nav a {
 	width:25% !important;
 }
 
+.footer-logo {
+	height:50% !important;
+	width:50% !important;
+}
+
+
 header a {
 	text-decoration:none;
 	border-bottom:none;
@@ -338,10 +344,21 @@ header nav a {
     padding-right: 1rem;
 }
 
+footer p, footer a {
+	font-size:0.7rem;
+}
+
+footer h4 {
+	font-size:0.9rem;
+}
+
+footer i {
+	font-size:1.1rem;
+}
+
   footer nav a {
 	display:block;
 	padding: 0.25rem;
-	font-size: 0.9rem;
   }
 
 /* Button Classes */
@@ -442,70 +459,71 @@ header nav a {
 
   /* Contact Form Styles */
 
-  .contact-form {
-	border: 7px solid transparent;
-	padding:2%;  
-	border-image: url('/images/border-image.png') 7;
-  }
-
   form input, 
 form textarea {
-  margin: 0.9rem 0;
+  display:inline-block;
+  margin: 0.6rem 0;
   padding: 0.9rem;
-  padding-top:2rem;
+  padding-top:1rem;
   padding-bottom:0.4rem;
-  border:none;
-  border-bottom: 2px solid rgb(220,220,220);
+  border: 1px solid #d9d9d9;
+  border-radius:25px;
   outline: none;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.1rem;
-  background-color:#F7F5F3;
-  color:inherit;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 0.9rem;
+  transition:0.3s all;
+  width:98%;
 }
 
-form input {
-	width:49%;
-	display:inline-block;
+form label {
+	display:block;
+	color:black;
+	text-transform:uppercase;
+	font-family: 'Epilogue', sans-serif;
+	margin-top:1rem;
+	font-weight:600;
 }
+
+.form-short {
+	width:48%;
+
+}
+
 form textarea {
 	width:98%;
 	resize:vertical;
-	display:inline-block;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: #ddb7c5;
+  background-color:#d9d9d9;
+  border-color:#d9d9d9;
 }
+
+
 
 textarea {
-  min-height: 4rem;
-}
-
-form label {
-  margin-top: 1rem;
-  display: block;
-  color: #6C7A89;
-  font-weight: bold;
+  min-height: 6rem;
 }
 
 form button {
 	text-decoration: none;
-	color: #231D2F;
-	border:none;
-	border: 2px solid;
+	color: white;
+	border: 2px solid #3d3d3d;
+	background-color:#3d3d3d;
 	border-radius:25px;
 	padding: 0.6rem 2rem;
 	margin-top: 1rem;
-	display: inline-block;
 	text-transform: uppercase;
-	font-size: 0.9rem;
-	font-weight: 500;
+	font-size: 0.8rem;
+	font-weight: 400;
+	float:right;
+	transition:0.3s all;
 }
 
 form button:hover {
-	color: #ddb7c5;
-	border-color: #ddb7c5;
+	color: #d9d9d9;
+	border-color: white;
 }
 
 
@@ -528,6 +546,8 @@ form button:hover {
 
 		.md-m-text {font-size:2.5rem;}
 		.md-s-text {font-size:1.5rem;}
+
+		h1 {font-size:2rem;}
 	}
 
 	
@@ -543,18 +563,20 @@ form button:hover {
 		.sm-text-left {text-align:left;}
 		.sm-text-right {text-align:right;}
 
-		.sm-padded {padding:5%}
-		.sm-padded-1 {padding:1rem;}
-		.sm-padded-05 {padding:0.5rem;}
+		.sm-padding {padding:5%}
+		.sm-padding-1 {padding:1rem;}
+		.sm-padding-05 {padding:0.5rem;}
+		.sm-padding-10 {padding:10%;}
 
-		.sm-padded-t-0 {padding-top:0;}
-		.sm-padded-b-0 {padding-bottom:0;}
+		.sm-padding-t-0 {padding-top:0;}
+		.sm-padding-b-0 {padding-bottom:0;}
 		.sm-margin-t-0 {margin-top:0;}
 		.sm-margin-b-0 {margin-bottom:0;}
-		.sm-padded-r-0 {padding-right:0;}
+		.sm-padding-r-0 {padding-right:0;}
 
-		.sm-s-text {font-size:1rem;}
-		.sm-m-text {font-size:2rem;}
+		.sm-s-text {font-size:0.8rem !important;}
+		.sm-m-text {font-size:1.2rem !important;}
+		.sm-l-text {font-size:2rem !important;}
 
 		form input {
 			width:98%;
@@ -566,7 +588,12 @@ form button:hover {
 			padding-bottom:1rem;
 		}
 
-		* {font-size:0.8rem;}
+		.sm-tall-30 {
+			min-height:30vh;
+		}
+
+		* {font-size:0.8rem !important;}
+		h1 {font-size:1.8rem !important;}
 	}
 
 /* --------------- XS Media Query (36em / 768px) --------------- */ 
