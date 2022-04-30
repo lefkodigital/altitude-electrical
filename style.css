@@ -37,14 +37,24 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Epilogue', sans-serif;
 	word-spacing: 0.1em;
 	margin-bottom:1.2rem;
-	font-weight:400;
+	font-weight:300;
 	color:black;
+}
+
+h1 {
+	font-size:3.5rem;
+	letter-spacing:0.2rem;
+}
+
+h3 {
+	font-weight:400;
+	letter-spacing:0.2rem;
 }
 
 h4 {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 }
 
 h5 {
@@ -64,11 +74,19 @@ p, a, li {
 	word-spacing:0.1rem;
 	letter-spacing:0.05rem;
 	margin-bottom: 0.8rem;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
+
+a {
+	font-weight:200;
+}
+
 p {
 	line-height:1.5rem;
+	font-weight:400;
+	font-size:0.9rem;
 }
+
 p:last-child {margin-bottom: 0;}
 
 .font-xl {font-size: 4rem;}
@@ -135,14 +153,14 @@ ul a {
 .dark {color:black;}
 
 .highlight-light {
-    background: linear-gradient(120deg, rgba(217,217,217,.8) 0%, rgba(217,217,217,.8) 100%);
+    background: linear-gradient(120deg, rgba(217,217,217,.3) 0%, rgba(217,217,217,.3) 100%);
 	background-repeat:no-repeat;
 	display:inline-block;
 	padding: 0.4rem 0.4rem;
 }
 
 .highlight-dark {
-    background: linear-gradient(120deg, rgba(92,92,92,.8) 0%, rgba(92,92,92,.8) 100%);
+    background: linear-gradient(120deg, rgba(61,61,61,.8) 0%, rgba(61,61,61,.8) 100%);
 	background-repeat:no-repeat;
 	display:inline-block;
 	padding: 0.4rem 0.4rem;
@@ -157,7 +175,6 @@ a {
 nav a {
 	text-decoration:none;
 	border:none;
-	margin:2%;
 }
 
 .banner {
@@ -167,7 +184,7 @@ nav a {
   	align-items:center;
 	background-image: url(/images/header-img.jpg);
     background-size:cover;
-    background-position:center;
+    background-position: 100% 82%;
 }
 
 .subtitle {
@@ -267,7 +284,7 @@ nav a {
 	display:flex;
 	justify-content:center;
   	align-items:center;
-	background-image: url(/images/header-img.jpg);
+	background-image: url(/images/res-services-cover.jpg);
     background-size:cover;
     background-position:center;
 	min-height:20vh;
@@ -277,7 +294,7 @@ nav a {
 	display:flex;
 	justify-content:center;
   	align-items:center;
-	background-image: url(/images/header-img.jpg);
+	background-image: url(/images/com-services-cover.jpg);
     background-size:cover;
     background-position:center;
 	min-height:20vh;
@@ -304,6 +321,23 @@ nav a {
 	padding-bottom: 100%;
   }
 
+.header-logo {
+	height:25% !important;
+	width:25% !important;
+}
+
+header a {
+	text-decoration:none;
+	border-bottom:none;
+}
+
+header nav a {
+	margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
   footer nav a {
 	display:block;
 	padding: 0.25rem;
@@ -312,33 +346,52 @@ nav a {
 
 /* Button Classes */
 
-.button-inverted {
-	text-decoration: none;
-	color: white;
-	border: 2px solid #3d3d3d;
-	fill:#3d3d3d;
-	border-radius:25px;
-	padding: 0.6rem 2rem;
-	margin-top: 1rem;
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 0.9rem;
-	font-weight: 500;
-  }
+	.button,
+    .button-solid,
+    .button-inverted,
+	.button-inverted-lbg,
+	.button-inverted-white {
+      text-decoration: none;
+      color:white;
+      border: 2px solid #5c5c5c;
+	  border-radius:25px;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+	.button-inverted, 
+	.button-inverted-lbg,
+	.button-inverted-white {
+		background-color:#5c5c5c;
+	}
 
   .button:hover {
-	color: #d9d9d9;
+	color: #5c5c5c;
   }
 
   .button-inverted:hover {
-	color: black;
+	color: #d9d9d9;
+	border-color: #3d3d3d;
+  }
+
+  .button-inverted-lbg:hover {
+	color: #d9d9d9;
 	border-color: #d9d9d9;
-	fill:#3d3d3d
+  }
+
+  .button-inverted-white:hover {
+	color: #d9d9d9;
+	border-color: white;
   }
 
   a:hover {
-	color: #be748f;
-	border-color: #be748f;
+	color: #d9d9d9;
+	border-color: #d9d9d9;
+	transition: 0.3s all;
   }
 
   /* Hamburger Menu Utility Classes */
