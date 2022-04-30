@@ -587,10 +587,9 @@ form button:hover {
 			word-spacing:0.5rem;
 			padding-bottom:1rem;
 		}
-
-		.sm-tall-30 {
-			min-height:30vh;
-		}
+		
+		.sm-tall-20 {min-height:20vh;}
+		.sm-tall-30 {min-height:30vh;}
 
 		* {font-size:0.8rem !important;}
 		h1 {font-size:1.8rem !important;}
