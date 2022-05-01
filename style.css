@@ -274,6 +274,10 @@ nav a {
 
 /* Image Classes */
 
+.serv-icon {
+	font-size:3rem;
+}
+
 .logo {
 	background-image: url(/images/Logo\ -\ Large.jpg);
 	background-size:cover;
@@ -361,6 +365,8 @@ footer i {
 	padding: 0.25rem;
   }
 
+
+
 /* Button Classes */
 
 	.button,
@@ -424,7 +430,6 @@ footer i {
 	position: relative;
 	right: 1rem;
 	top: 1rem;
-	z-index: 2;
 	text-decoration:none;
 	border:none;
   }
@@ -440,10 +445,8 @@ footer i {
 	text-decoration:none;
 	background-color: #d9d9d9; 
 	padding: 5%;
-	position: relative; 
+	position: absolute; 
 	top:0;
-	bottom: 0;
-	left:0;
 	right:0;
 	text-align: center;
   }
@@ -515,13 +518,17 @@ footer i {
 	  
 	  .slick-dots {
 		left: 0;
-		bottom: 10px;
+		bottom: 5px;
 		/*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
 	  }
 	  
 	  .slick-dots li,
 	  .slick-dots li button {
 		width: 10px;
+	  }
+
+	  .slick-slide {
+		  height:75% !important;
 	  }
 	  
 	  .slick-dots li button::before {
@@ -620,8 +627,34 @@ form button:hover {
 
 		.md-m-text {font-size:2.5rem;}
 		.md-s-text {font-size:1.5rem;}
+		.md-text-center {text-align:center;}
 
 		h1 {font-size:2rem;}
+
+		.md-tall-40 {
+			min-height:40vh;
+		}
+
+		.md-padding {padding:5%;}
+		.md-padding-tb-0 {
+			padding-top:0%; 
+			padding-bottom:0%;
+		}
+
+		.horizontal-scroll {
+			overflow-x:auto;
+			flex-wrap:nowrap;
+			padding-left:1rem;
+			padding-right:1rem;
+			padding-bottom:7%;
+		  }
+			.card img {
+			  margin-top:-25%;
+			}
+			.mob-padded-0 {
+			  padding-left:0;
+			  padding-right:0;
+			}
 	}
 
 	
@@ -665,6 +698,8 @@ form button:hover {
 		.sm-tall-20 {min-height:20vh;}
 		.sm-tall-30 {min-height:30vh;}
 
+		.serv-icon {font-size:1.5rem !important;}
+
 		* {font-size:0.8rem !important;}
 		h1 {font-size:1.8rem !important;}
 	}
@@ -672,20 +707,7 @@ form button:hover {
 /* --------------- XS Media Query (36em / 768px) --------------- */ 
 	/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 	@media(max-width:36em) {
-		.horizontal-scroll {
-		  overflow-x:auto;
-		  flex-wrap:nowrap;
-		  padding-left:1rem;
-		  padding-right:1rem;
-		  padding-bottom:7%;
-		}
-		  .card img {
-			margin-top:-25%;
-		  }
-		  .mob-padded-0 {
-			padding-left:0;
-			padding-right:0;
-		  }
+		
 
 		  .slider-item p { font-size: 0.8rem;}
 

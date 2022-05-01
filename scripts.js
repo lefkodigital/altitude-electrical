@@ -1,4 +1,5 @@
- 
+$(document).ready(function(){ 
+
   $(".testimonial-slider-container").slick({
       autoplay: true,
       autoplaySpeed: 2e3,
@@ -22,3 +23,15 @@
           }
       }]
   });
+
+  $('.hamburger-button').click(function(){
+    $('.mobile-menu').fadeToggle(100);
+    $(this).toggleClass('active');
+  });
+
+  $('.hamburger-link').click(function(){
+    $('.mobile-menu').hide();
+    $('.hamburger-button').toggleClass('active');
+  });
+
+});
