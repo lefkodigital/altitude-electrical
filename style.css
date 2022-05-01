@@ -322,8 +322,8 @@ nav a {
   }
 
 .header-logo {
-	height:25% !important;
-	width:25% !important;
+	height:20% !important;
+	width: 20% !important;
 }
 
 .footer-logo {
@@ -461,17 +461,20 @@ footer i {
 
   	.author {
 		font-size: 0.9rem;
-		color: rgb(90,90,90);
+		color: #d9d9d9;
 		margin-top: 0.5rem;
 		font-style: italic;
 		text-align: right;
+		opacity:0.9;
   	}
 
   	.quote-icon {
-		font-size:6rem;
+		font-size:2rem;
 		display:inline-block;
 		color:#d9d9d9;
 		line-height:1;
+		padding-top:2rem;
+		padding-bottom:2rem;
 	}
 
 	.testimonial-slider-container {
@@ -483,6 +486,11 @@ footer i {
 	  .slider-item {
 		padding: 1rem;
 		display: none;
+		color:#d9d9d9;
+	  }
+
+	  .testimonial-big {
+		  font-size:1.2rem;
 	  }
 	  
 	  .slider-item:first-child {
@@ -502,7 +510,7 @@ footer i {
 		  font-size: 20px;
 		  line-height: 1;
 		  opacity: .75;
-		  color: rgb(90,90,90);
+		  color:#d9d9d9;
 	  }
 	  
 	  .slick-dots {
@@ -517,11 +525,11 @@ footer i {
 	  }
 	  
 	  .slick-dots li button::before {
-		color: rgb(90,90,90);
+		color: #5c5c5c;
 	  }
 	  
 	  .slick-dots li.slick-active button::before {
-		color: rgb(90,90,90);
+		color: #5c5c5c;
 	  }
 
 
