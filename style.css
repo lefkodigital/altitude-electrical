@@ -326,8 +326,8 @@ nav a {
   }
 
 .header-logo {
-	height:20% !important;
-	width: 20% !important;
+	max-height:20% !important;
+	max-width: 20% !important;
 }
 
 .footer-logo {
